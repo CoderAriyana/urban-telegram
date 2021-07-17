@@ -1,4 +1,6 @@
 //YOUR FIREBASE LINKS
+user_name = localStorage.getItem("user_name");
+room_name = localStorage.getItem("room_name");
 var firebaseConfig = {
       apiKey: "AIzaSyAdwd8-BN2gwOSG8Uf-lb-Ig9ukMMC1Aho",
       authDomain: "chat-app-bbce4.firebaseapp.com",
@@ -27,8 +29,6 @@ document.getElementById("output").innerHTML += row;
 //End code
       } });  }); }
 getData();
-user_name = localStorage.getItem("user_name");
-room_name = localStorage.getItem("room_name");
 
 function send(){
 msg = document.getElementById("msg").value;
